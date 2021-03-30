@@ -1,0 +1,126 @@
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+#image-type {
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 100vw;
+    height: 90vh;
+}
+
+.bg-image-button,
+.time-btn {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    padding: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 1px 5px 14px black;
+    outline: none;
+}
+
+#time {
+    visibility: hidden;
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 100vw;
+    height: 90vh;
+}
+
+.line-two-min {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: red;
+    animation-name: fulllinetwomin;
+    animation-duration: 120s;
+}
+
+@keyframes fulllinetwomin {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.line-five-min {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: red;
+    animation-name: fulllinefivemin;
+    animation-duration: 300s;
+}
+
+@keyframes fulllinefivemin {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.line-ten-min {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: red;
+    animation-name: fulllinetenmin;
+    animation-duration: 600s;
+}
+
+@keyframes fulllinetenmin {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+#image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(main-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#thank {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    color: transparent;
+    font-size: 3em;
+    -webkit-text-stroke: rgb(0, 255, 0);
+    -webkit-text-stroke-width: thin;
+    visibility: hidden;
+}
+
+@media only screen and (max-width:420px) {
+    .bg-image-button {
+        font-size: 1.5em;
+        padding: 6px;
+    }
+    .time-btn {
+        font-size: 1.4em;
+        padding: 5px;
+    }
+}
